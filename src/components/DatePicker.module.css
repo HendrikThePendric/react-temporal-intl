@@ -1,0 +1,78 @@
+.wrapper {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.navGridContainer {
+    display: grid;
+    grid-template-areas:
+    'prevYear currYear nextYear'
+    'prevMonth currMonth nextMonth'
+    'today today today';
+    gap: 8px;
+    padding: 8px;
+}
+.navGridContainer > div {
+    display: flex;
+}
+.navGridContainer > .prev {
+    justify-content: flex-start;
+}
+.navGridContainer > .curr {
+    justify-content: center;
+}
+.navGridContainer > .next {
+    justify-content: flex-end;
+}
+.navGridContainer > .today {
+    grid-area: today;
+}
+.today > button {
+    width: 100%;
+}
+.calendarTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+.calendarTable th {
+    padding: 4px 6px;
+}
+.calendarTable td {
+    padding: 2px 4px;
+    text-align: center;
+    border: 1px solid lightgrey;
+    background-color: white;
+}
+.calendarTable td span {
+    display: inline-flex;
+    padding: 2px 2px;
+    justify-content: center;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    min-width: 16px;
+}
+.selectedDate {
+    text-align: center;
+    padding: 4px 8px;
+}
+.label {
+    display: flex;
+    background-color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    justify-content: center;
+    min-height: 16px;
+}
+.selectedDate .label:empty {
+    visibility: hidden;
+}
+td.isSelected {
+    background-color: #cde1fe;
+}
+td.isToday > span {
+    border-color: #517bba;
+}
+td.otherMonth {
+    background-color: #eeeeee;
+}
