@@ -1,10 +1,13 @@
 {
-    "name": "temporal",
+    "name": "react-temporal-intl",
     "private": true,
     "version": "0.0.0",
+    "homepage": "https://HendrikThePendric.github.io/react-temporal-intl/",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
+        "predeploy": "vite build",
+        "deploy": "gh-pages -d dist",
         "preview": "vite preview"
     },
     "dependencies": {
@@ -23,6 +26,7 @@
         "eslint-plugin-import": "^2.26.0",
         "eslint-plugin-react": "^7.29.4",
         "eslint-plugin-react-hooks": "^4.5.0",
+        "gh-pages": "^4.0.0",
         "prettier": "^2.6.2",
         "vite": "^2.9.9",
         "vite-plugin-eslint": "^1.6.0",

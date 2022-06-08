@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import { useState } from 'react'
-import { calendars } from '../calendars.js'
+import { calendars } from '../constants/calendars.js'
 import { numberingSystems } from '../constants/numberingSystems.js'
 import { timeZones } from '../constants/timeZones.js'
 import { useResolvedDir } from '../hooks/useResolvedDir.js'

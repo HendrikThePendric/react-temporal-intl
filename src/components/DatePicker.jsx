@@ -1,6 +1,6 @@
 import cx from 'classnames'
 import PropTypes from 'prop-types'
-import { calendars } from '../calendars.js'
+import { calendars } from '../constants/calendars.js'
 import { numberingSystems } from '../constants/numberingSystems.js'
 import { timeZones } from '../constants/timeZones.js'
 import { useDatePicker } from '../hooks/useDatePicker.js'
@@ -114,6 +114,11 @@ export const DatePicker = ({
             </table>
             <div className={styles.selectedDate}>
                 <span className={styles.label}>{selectedDate.label}</span>
+            </div>
+            <div className={styles.selectedDate}>
+                <span className={styles.label}>
+                    {selectedDate.nativeDateLabel}
+                </span>
             </div>
         </div>
     )
