@@ -10,19 +10,6 @@ export const useFormatters = ({
 }) =>
     useMemo(
         () => ({
-            testNativeIntl: zdt => {
-                console.log(zdt, locale, options)
-                const formatter = new window.Intl.DateTimeFormat(locale, {
-                    dateStyle: 'full',
-                    numberingSystem: options.numberingSystem,
-                    calendar: options.calendar,
-                    timeZone: options.timeZone,
-                })
-                const nativeDate =
-                    zdt && new Date(zdt.toInstant().epochMilliseconds)
-
-                return nativeDate ? formatter.format(nativeDate) : '---'
-            },
             longFullDate: new Intl.DateTimeFormat(locale, {
                 dateStyle: 'full',
                 numberingSystem: options.numberingSystem,

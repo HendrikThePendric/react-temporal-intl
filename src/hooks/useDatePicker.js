@@ -105,7 +105,6 @@ export const useDatePicker = ({
             label:
                 selectedDateZdt &&
                 formatters.longFullDate.format(selectedDateZdt.toInstant()),
-            nativeDateLabel: formatters.testNativeIntl(selectedDateZdt),
         },
         today: {
             label: formatters.daysAgoNonNumeric.format(0, 'day'),
