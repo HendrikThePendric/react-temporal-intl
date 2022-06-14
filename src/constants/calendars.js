@@ -20,6 +20,6 @@ export const calendars = [
     'buddhist',
     'japanese',
     'gregory',
-    // custom
-    'nepali',
+    // TODO: implement Nepali calendar class
+    // 'nepali',
 ]

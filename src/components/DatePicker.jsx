@@ -115,11 +115,6 @@ export const DatePicker = ({
             <div className={styles.selectedDate}>
                 <span className={styles.label}>{selectedDate.label}</span>
             </div>
-            <div className={styles.selectedDate}>
-                <span className={styles.label}>
-                    {selectedDate.nativeDateLabel}
-                </span>
-            </div>
         </div>
     )
 }
