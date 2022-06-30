@@ -4,6 +4,6 @@ import eslintPlugin from 'vite-plugin-eslint'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: '/react-temporal-intl',
+    base: '/react-temporal-intl/',
     plugins: [react(), eslintPlugin()],
 })
